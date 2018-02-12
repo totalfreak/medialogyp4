@@ -1,0 +1,131 @@
+
+% CREATED BY DAVID FRISK, 2015
+
+
+% BASIC SETTINGS
+\usepackage{url}
+\usepackage{lastpage}								% Get the number of pages
+\usepackage{moreverb}								% List settings
+\usepackage{textcomp}								% Fonts, symbols etc.
+\usepackage{lmodern}								% Latin modern font
+\usepackage{helvet}									% Enables font switching
+\usepackage[T1]{fontenc}							% Output settings
+\usepackage[english]{babel}							% Language settings
+\usepackage[utf8]{inputenc}							% Input settings
+\usepackage[table]{xcolor} 							% Table colors
+\definecolor{light-gray}{gray}{0.96}			% Defining a very light gray for a table
+
+\usepackage{amsmath}								% Mathematical expressions (American mathematical society)
+\usepackage{amssymb}								% Mathematical symbols (American mathematical society)
+\usepackage{graphicx}								% Figures
+\usepackage{subfig}									% Enables subfigures
+\numberwithin{equation}{chapter}					% Numbering order for equations
+\numberwithin{figure}{chapter}						% Numbering order for figures
+\numberwithin{table}{chapter}						% Numbering order for tables
+\usepackage{listings}								% Enables source code listings
+\usepackage{xparse}								% Enables in-line code
+\NewDocumentCommand{\codeword}{v}{ % Enables in-line code
+	\texttt{\textcolor{blue}{#1}}
+}
+\usepackage{chemfig}								% Chemical structures
+\usepackage[top=3cm, bottom=3cm,
+			inner=3cm, outer=3cm]{geometry}			% Page margin lengths			
+\usepackage{eso-pic}								% Create cover page background
+\newcommand{\backgroundpic}[3]{
+	\put(#1,#2){
+	\parbox[b][\paperheight]{\paperwidth}{
+	\centering
+	\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{#3}}}}
+\usepackage{float} 									% Enables object position enforcement using [H]
+\usepackage{parskip}								% Enables vertical spaces correctly 
+\usepackage{minted}
+%Code highlighting and formatting
+\usepackage{dirtree}
+\usepackage{epigraph}
+%Appendix
+\usepackage[toc,page]{appendix}
+\usepackage{wrapfig}
+\usepackage{caption}
+% OPTIONAL SETTINGS (DELETE OR COMMENT TO SUPRESS)
+
+% Disable automatic indentation (equal to using \noindent)
+\setlength{\parindent}{0cm}                         
+
+
+% Caption settings (aligned left with bold name)
+% \usepackage[labelfont=bf, textfont=normal,
+%			justification=justified,
+%			singlelinecheck=false]{caption} 		
+
+		  	
+% Activate clickable links in table of contents  	
+\usepackage{hyperref}								
+\hypersetup{colorlinks, citecolor=black,
+   		 	filecolor=black, linkcolor=black,
+    		urlcolor=black}
+
+
+% Define the number of section levels to be included in the t.o.c. and numbered	(3 is default)	
+\setcounter{tocdepth}{5}							
+\setcounter{secnumdepth}{5}	
+
+
+% Chapter title settings
+\usepackage{titlesec}		
+\titleformat{\chapter}[display]
+  {\Huge\bfseries\filcenter}
+  {{\fontsize{35pt}{1em}\vspace{-4.2ex}\selectfont \textnormal{\thechapter}}}{1ex}{}[]
+
+
+% Header and footer settings (Select TWOSIDE or ONESIDE layout below)
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancypagestyle{plain}{}
+\lhead{}
+\rhead{}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\space#1}{}}
+
+
+\fancyhf{}
+\fancyhead[L]{Daniel Kartin\\Marcus Skytt\\Rasmus Kruuse}
+\fancyhead[C]{MED3\\AAU CPH}
+\fancyhead[R]{Nicolai Kloch Lorits\\Simone Danielsen\\Jens Jákup Gaardbo}
+\fancyfoot[C]{\thepage}
+
+\usepackage[final]{pdfpages}
+\usepackage{verbatim}
+\usepackage{lipsum}
+\usepackage{multicol}
+% Enable To-do notes
+\usepackage[textsize=tiny]{todonotes}   % Include the option "disable" to hide all notes
+\setlength{\marginparwidth}{2.5cm} 
+
+\usepackage{tikz}
+\usetikzlibrary{mindmap,trees}
+\usepackage{nameref}
+
+% Supress warning from Texmaker about headheight
+\setlength{\headheight}{30pt}		
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+
+
+\usepackage[square,numbers,sort&compress]{natbib}
+\bibliographystyle{unsrtnat}
+
+\usepackage{tocbibind}
+
+\usepackage{tikz}
+\usepackage{pgf-pie}
+\usepackage{pgfplots}
+\pgfplotsset{width=12cm,compat=1.11}
+\pgfplotsset{
+	cycle list={red\\blue\\},
+}
+\usepgfplotslibrary{statistics}
+
+
+

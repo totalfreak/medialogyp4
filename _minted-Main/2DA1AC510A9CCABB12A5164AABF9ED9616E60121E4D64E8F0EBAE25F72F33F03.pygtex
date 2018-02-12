@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{[}\PYG{n}{DllImport}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}unityOpencvPlugin\PYGZdq{}}\PYG{p}{,} \PYG{n}{EntryPoint} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}init\PYGZdq{}}\PYG{p}{)]}
+\PYG{k}{public} \PYG{k}{static} \PYG{k}{extern} \PYG{k+kt}{int} \PYG{n}{Init}\PYG{p}{(}\PYG{n}{ref} \PYG{k+kt}{int} \PYG{n}{outCameraWidth}\PYG{p}{,} \PYG{n}{ref} \PYG{k+kt}{int} \PYG{n}{outCameraHeight}\PYG{p}{);}
+\end{Verbatim}
