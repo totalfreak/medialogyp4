@@ -1,1 +1,8 @@
 \chapter{Implementation}
+\begin{listing}[H]
+	\caption{How to declare a function for DLL export in C++}
+	\label{listing:dllExport}
+	\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.1,fontsize=\footnotesize,linenos]{cpp}
+extern "C" __declspec( dllexport ) int init(int w, int h);
+	\end{minted}
+\end{listing}

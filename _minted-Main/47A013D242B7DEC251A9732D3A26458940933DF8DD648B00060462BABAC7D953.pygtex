@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{unsafe}\PYG{p}{\PYGZob{}}
-	\PYG{n}{fixed} \PYG{p}{(}\PYG{n}{CVObject}\PYG{o}{*} \PYG{n}{outMarkers} \PYG{o}{=} \PYG{n}{\PYGZus{}markers}\PYG{p}{)\PYGZob{}}
-		\PYG{n}{Cap}\PYG{p}{(}\PYG{n}{outMarkers}\PYG{p}{,} \PYG{n}{\PYGZus{}maxMarkerDetectCount}\PYG{p}{,} \PYG{n}{ref} \PYG{n}{detectedMarkersCount}\PYG{p}{);}
-	\PYG{p}{\PYGZcb{}}
-\PYG{p}{\PYGZcb{}}
-\end{Verbatim}

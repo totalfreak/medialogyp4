@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-	\PYG{c+c1}{//in C++}
-	\PYG{k}{struct} \PYG{n}{ObjectData} \PYG{p}{\PYGZob{}}
-	   \PYG{k+kt}{int} \PYG{n}{X}\PYG{p}{,} \PYG{n}{Y}\PYG{p}{,} \PYG{n}{Type}\PYG{p}{,} \PYG{n}{RotationX}\PYG{p}{,} \PYG{n}{RotationY}\PYG{p}{,} \PYG{n}{Rotation}\PYG{p}{;}
-	\PYG{p}{\PYGZcb{};}
-\end{Verbatim}
