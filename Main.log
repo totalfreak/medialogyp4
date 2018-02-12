@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.6)  12 FEB 2018 09:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.6)  12 FEB 2018 09:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2007,7 +2007,7 @@ enefit from \pgfplotsset{compat=1.15} (current compat level: 1.11).
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<figure/Frontpage/gardenposterCropped.png, id=15, 845.0772pt x 644.6484pt>
+<figure/Frontpage/gardenposterCropped.png, id=55, 845.0772pt x 644.6484pt>
 File: figure/Frontpage/gardenposterCropped.png Graphic file (type png)
 <use figure/Frontpage/gardenposterCropped.png>
 Package pdftex.def Info: figure/Frontpage/gardenposterCropped.png  used on inpu
@@ -2032,7 +2032,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--32
 
  []
 
-<figure/Frontpage/frontpage-aau.pdf, id=18, pagebox=cropbox, 2489.21962pt x 352
+<figure/Frontpage/frontpage-aau.pdf, id=58, pagebox=cropbox, 2489.21962pt x 352
 0.99449pt>
 File: figure/Frontpage/frontpage-aau.pdf Graphic file (type pdf)
 <use figure/Frontpage/frontpage-aau.pdf>
@@ -2045,75 +2045,43 @@ e 35.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figure/Frontpage/frontpa
 ge-aau.pdf> <./figure/Frontpage/gardenposterCropped.png>])
-(./include/frontmatter/Abstract.tex
+(./include/frontmatter/Abstract.tex) (./Main.toc
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 4.
 
-pdfTeX warning: /usr/bin/pdflatex (file ./include/frontmatter/Page_0.pdf): PDF 
-inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<include/frontmatter/Page_0.pdf, id=30, pagebox=cropbox, 597.23125pt x 845.1575
-pt>
-File: include/frontmatter/Page_0.pdf Graphic file (type pdf)
-<use include/frontmatter/Page_0.pdf>
-Package pdftex.def Info: include/frontmatter/Page_0.pdf  used on input line 3. 
-on input line 3.
-Package pdftex.def Info: Requested size: 597.22978pt x 845.15544pt on input lin
-e 3.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 4.
 
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 4.
 
-pdfTeX warning: /usr/bin/pdflatex (file ./include/frontmatter/Page_0.pdf): PDF 
-inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-File: include/frontmatter/Page_0.pdf Graphic file (type pdf)
-<use include/frontmatter/Page_0.pdf>
-Package pdftex.def Info: include/frontmatter/Page_0.pdf  used on input line 3. 
-on input line 3.
-Package pdftex.def Info: Requested size: 597.22978pt x 845.15544pt on input lin
-e 3.
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 4.
 
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 4.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
-pdfTeX warning: /usr/bin/pdflatex (file ./include/frontmatter/Page_0.pdf): PDF 
-inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
-
-pdfTeX warning: /usr/bin/pdflatex (file ./include/frontmatter/Page_0.pdf): PDF 
-inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<include/frontmatter/Page_0.pdf, id=33, page=1, pagebox=cropbox, 597.23125pt x 
-845.1575pt>
-File: include/frontmatter/Page_0.pdf Graphic file (type pdf)
-<use include/frontmatter/Page_0.pdf, page 1>
-Package pdftex.def Info: include/frontmatter/Page_0.pdf , page1 used on input l
-ine 3. on input line 3.
-Package pdftex.def Info: Requested size: 597.22978pt x 845.15544pt on input lin
-e 3.
-File: include/frontmatter/Page_0.pdf Graphic file (type pdf)
-<use include/frontmatter/Page_0.pdf, page 1>
-Package pdftex.def Info: include/frontmatter/Page_0.pdf , page1 used on input l
-ine 3. on input line 3.
-Package pdftex.def Info: Requested size: 597.25711pt x 845.19412pt on input lin
-e 3.
-File: include/frontmatter/Page_0.pdf Graphic file (type pdf)
-<use include/frontmatter/Page_0.pdf, page 1>
-Package pdftex.def Info: include/frontmatter/Page_0.pdf , page1 used on input l
-ine 3. on input line 3.
-Package pdftex.def Info: Requested size: 597.25711pt x 845.19412pt on input lin
-e 3.
-File: include/frontmatter/Page_0.pdf Graphic file (type pdf)
-<use include/frontmatter/Page_0.pdf, page 1>
-Package pdftex.def Info: include/frontmatter/Page_0.pdf , page1 used on input l
-ine 3. on input line 3.
-Package pdftex.def Info: Requested size: 597.25711pt x 845.19412pt on input lin
-e 3.
-File: include/frontmatter/Page_0.pdf Graphic file (type pdf)
-<use include/frontmatter/Page_0.pdf, page 1>
-Package pdftex.def Info: include/frontmatter/Page_0.pdf , page1 used on input l
-ine 3. on input line 3.
-Package pdftex.def Info: Requested size: 597.25711pt x 845.19412pt on input lin
-e 3.
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 ...df[pages=-]{include/frontmatter/Page_0.pdf}
-                                                   [1 <./include/frontmatter/Pa
-ge_0.pdf>]) (./Main.toc)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write9
 \openout9 = `Main.toc'.
 
@@ -2124,10 +2092,16 @@ Package Fancyhdr Warning: \headheight is too small (30.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 \newpage
+              [1
 
-]
-No file Main.bbl.
+] (./include/Indledning.tex
+Chapter 1.
+) (./include/Analyse.tex
 
 Package Fancyhdr Warning: \headheight is too small (30.0pt): 
  Make it at least 38.82321pt.
@@ -2136,8 +2110,108 @@ Package Fancyhdr Warning: \headheight is too small (30.0pt):
 
 [1
 
+]
+Chapter 2.
+) (./include/Methods.tex
 
-] 
+Package Fancyhdr Warning: \headheight is too small (30.0pt): 
+ Make it at least 38.82321pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2
+
+]
+Chapter 3.
+) (./include/Design.tex
+
+Package Fancyhdr Warning: \headheight is too small (30.0pt): 
+ Make it at least 38.82321pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3
+
+]
+Chapter 4.
+) (./include/Implemention.tex
+
+Package Fancyhdr Warning: \headheight is too small (30.0pt): 
+ Make it at least 38.82321pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4
+
+]
+Chapter 5.
+) (./include/Evaluation.tex
+
+Package Fancyhdr Warning: \headheight is too small (30.0pt): 
+ Make it at least 38.82321pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5
+
+]
+Chapter 6.
+) (./include/Discussion.tex
+
+Package Fancyhdr Warning: \headheight is too small (30.0pt): 
+ Make it at least 38.82321pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6
+
+]
+Chapter 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+) (./include/backmatter/Konklusion.tex
+
+Package Fancyhdr Warning: \headheight is too small (30.0pt): 
+ Make it at least 38.82321pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7
+
+]
+Chapter 8.
+) (./Main.bbl
+
+Package Fancyhdr Warning: \headheight is too small (30.0pt): 
+ Make it at least 38.82321pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8
+
+])
+
+Package Fancyhdr Warning: \headheight is too small (30.0pt): 
+ Make it at least 38.82321pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (30.0pt): 
+ Make it at least 38.82321pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10
+
+
+] (./include/Appendices.tex) 
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
@@ -2145,25 +2219,27 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: F6150FA62A9DE2EA03CF867BD05D965F;90.
+(rerunfilecheck)             Checksum: 917E58C8B37C5F3C6A491DCF6480BD15;569.
  ) 
 Here is how much of TeX's memory you used:
- 44586 strings out of 494931
- 985256 string characters out of 6180852
- 1351539 words of memory out of 5000000
- 47166 multiletter control sequences out of 15000+600000
- 564828 words of font info for 44 fonts, out of 8000000 for 9000
+ 44746 strings out of 494931
+ 987971 string characters out of 6180852
+ 1351549 words of memory out of 5000000
+ 47245 multiletter control sequences out of 15000+600000
+ 590467 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 64i,18n,96p,10446b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,13n,96p,10446b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist
 /fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
-uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Main.pdf (4 pages, 6238864 bytes).
+e1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/helvetic/uhvr8a.pfb>
+Output written on Main.pdf (12 pages, 6146137 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
