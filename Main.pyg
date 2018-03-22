@@ -1,1 +1,0 @@
-extern "C" __declspec( dllexport ) int init(int w, int h);
