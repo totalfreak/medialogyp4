@@ -16,9 +16,43 @@ Due to the agile nature of the prototype development the implementation stage be
 			\caption{Example 1}
 			\label{listing:example1}
 			\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.1,fontsize=\footnotesize,linenos]{cpp}
-extern "C" __declspec( dllexport ) int init(int w, int h);
+struct SequenceField {
+  int octave = 4;
+  Field activatedFields[5];
+};
+
+struct Segment {
+  bool enabled = true;
+  int ledPin;
+  SequenceField sequence[4];
+};
 			\end{minted}
 		\end{listing}
+		
+		\begin{listing}[H]
+			\caption{Example 2}
+			\label{listing:example2}
+			\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.1,fontsize=\footnotesize,linenos]{cpp}
+void writeSegments() {
+  for(int i = 0; i < amountOfSegments; i++) {
+	EEPROM.put(i*sizeof(Segment), segments[i]);
+  }
+}
+			\end{minted}
+		\end{listing}
+	
+		\begin{listing}[H]
+			\caption{Example 3}
+			\label{listing:example3}
+			\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.1,fontsize=\footnotesize,linenos]{cpp}
+void readSegments() {
+  for(int i = 0; i < amountOfSegments; i++) {
+	EEPROM.get(i*sizeof(Segment), segments[i]);
+  }
+}
+			\end{minted}
+		\end{listing}
+	
 		\subsubsection{Libraries}%Daniel
 	\subsection{PureData}%Jens
 	Figure \ref{fig:pdPatch} shows the main patch of the PD code that was uploaded to the Bela. It takes inputs through the Belas' pins from the Arduino Mega. The PD patch is responsible for playing the sounds when the pads are pressed, changing the octave by multiplying/dividing the oscillators' frequencies by 2, playing the count in sound before recording or playing.
