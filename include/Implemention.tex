@@ -14,6 +14,8 @@ Due to the agile nature of the prototype development the implementation stage be
 	\subsection{Arduino}%Daniel
 		\subsubsection{Libraries}%Daniel
 	\subsection{PureData}%Jens
+	Figure \ref{fig:pdPatch} shows the main patch of the PD code that was uploaded to the Bela. It takes inputs through the Belas' pins from the Arduino Mega. The PD patch is responsible for playing the sounds when the pads are pressed, changing the octave by multiplying/dividing the oscillators' frequencies by 2, playing the count in sound before recording or playing.
+	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\linewidth]{figure/Implementation/pdPatch}
