@@ -17,7 +17,8 @@ Due to the agile nature of the prototype development the implementation stage be
 		\item[-] It should be able to save the sequences of fields in four separate segments.
 		\item[-] It should be able to start playback of the previously saved segments.
 	\end{itemize}
-	
+		To categorize the data and prepare it for saving on the Mega, two separate structures where made. These structures as seen in \autoref{listing:structs} are called \mintinline{cpp}{SequenceField} and \mintinline{cpp}{Segment}. SequenceField contains an \mintinline{cpp}{int} that holds the octave of the sequence, and a \mintinline{cpp}{Field} array to hold the activated fields.\\\\ The \mintinline{cpp}{Segment} structure holds a \mintinline{cpp}{SequenceField} array to contain the 4 sequences (beats), a \mintinline{cpp}{bool} to keep track of what segment is enabled, and the corresponding LED pin.
+		
 		\begin{listing}[H]
 			\caption{The structs used to contain our data for the segments and their fields.}
 			\label{listing:structs}
@@ -34,7 +35,7 @@ struct Segment {
 };
 			\end{minted}
 		\end{listing}
-		
+To save the segments and their data to persist through restarts, we make use of the onboard EEPROM. The EEPROM on the Arduino Mega can hold 4k bytes of data while our segments only take up 611 bytes of that space.
 		\begin{listing}[H]
 			\caption{Writing our segment data to the EEPROM}
 			\label{listing:writeSegment}
@@ -46,6 +47,23 @@ void writeSegments() {
 }
 			\end{minted}
 		\end{listing}
+		
+				\begin{listing}[H]
+					\caption{Writing our segment data to the EEPROM}
+					\label{listing:recording}
+					\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.1,fontsize=\footnotesize,linenos]{cpp}						
+if (controller.recording) {
+	pentaFields[iterator][i].read();
+	controller.read();
+	segments[segmentSelector].sequence[iterator].activatedFields[i] = Field(0,0,0);
+	if(pentaFields[iterator][i].hasKid) {
+		segments[segmentSelector].sequence[iterator].activatedFields[i] = pentaFields[iterator][i];
+		segments[segmentSelector].sequence[iterator].octave = controller.octaveIterator;
+		segments[segmentSelector].sequence[iterator].activatedFields[i].play();
+	}
+}
+					\end{minted}
+				\end{listing}
 	
 		\subsubsection{Libraries}%Daniel
 			FastLed, button.
