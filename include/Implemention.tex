@@ -17,7 +17,10 @@ Due to the agile nature of the prototype development the implementation stage be
 		\item[-] It should be able to save the sequences of fields in four separate segments.
 		\item[-] It should be able to start playback of the previously saved segments.
 	\end{itemize}
-		To categorize the data and prepare it for saving on the Mega, two separate structures where made. These structures as seen in \autoref{listing:structs} are called \mintinline{cpp}{SequenceField} and \mintinline{cpp}{Segment}. SequenceField contains an \mintinline{cpp}{int} that holds the octave of the sequence, and a \mintinline{cpp}{Field} array to hold the activated fields.\\\\ The \mintinline{cpp}{Segment} structure holds a \mintinline{cpp}{SequenceField} array to contain the 4 sequences (beats), a \mintinline{cpp}{bool} to keep track of what segment is enabled, and the corresponding LED pin.
+		To categorize the data and prepare it for saving on the Mega, two separate structures where made. These structures as seen in \autoref{listing:structs} are called \mintinline{cpp}{SequenceField} and \mintinline{cpp}{Segment}. SequenceField contains an \mintinline{cpp}{int} that holds the octave of the sequence, and a \mintinline{cpp}{Field} array to hold the activated fields.
+		
+		\noindent
+		The \mintinline{cpp}{Segment} structure holds a \mintinline{cpp}{SequenceField} array to contain the 4 sequences (beats), a \mintinline{cpp}{bool} to keep track of what segment is enabled, and the corresponding LED pin.
 		
 		\begin{listing}[H]
 			\caption{The structs used to contain our data for the segments and their fields.}
@@ -35,7 +38,8 @@ struct Segment {
 };
 			\end{minted}
 		\end{listing}
-To save the segments and their data to persist through restarts, we make use of the onboard EEPROM. The EEPROM on the Arduino Mega can hold 4k bytes of data while our segments only take up 611 bytes of that space. Writing to the EEPROM on an Arduino is quite straightforward, we simply iterate over our \mintinline{cpp}{Segment} array, and put in into the EEPROM according to the size of our structure.
+		\noindent
+		To save the segments and their data to persist through restarts, we make use of the onboard EEPROM. The EEPROM on the Arduino Mega can hold 4k bytes of data and our segments only take up 611 bytes of that space. Writing to the EEPROM on an Arduino is quite straightforward, we simply iterate over our \mintinline{cpp}{Segment} array, and put in into the EEPROM according to the size of our structure.
 		\begin{listing}[H]
 			\caption{Writing our segment data to the EEPROM}
 			\label{listing:writeSegment}
@@ -47,7 +51,8 @@ void writeSegments() {
 }
 			\end{minted}
 		\end{listing}
-		\autoref{fig:flowchartPlayRecord} explains what happens when either the record or play buttons is pressed.
+		\noindent
+		\autoref{fig:flowchartPlayRecord} explains what happens when either the record or play buttons is pressed. Pressing the play button, goes through the enabled segments, and plays the sequences in each. Pressing the record button however starts a more complex routine, starting with going over each field in the current beat and checking if it's activated. Then an empty Field object is made for each field, to record silence in the fields where no kid were standing. If a field was activated, then it saves the octave in the sequence and the field in \mintinline{cpp}{activatedFields[]}. In the end it plays the activated fields' sounds.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=.5\linewidth]{figure/Implementation/flowchartPlayRecord}
@@ -56,7 +61,8 @@ void writeSegments() {
 			\end{figure}
 	
 		\subsubsection{Libraries}%Daniel
-			FastLed, button.
+			To achieve some of the functionality in a short amount of time, two libraries were used in addition to our own system,
+			the FastLed and button library.
 	\subsection{PureData}%Jens
 	\autoref{fig:pdPatch} shows the main patch of the PD code that was uploaded to the Bela. It takes inputs through the Belas' pins from the Arduino Mega. The PD patch is responsible for playing the sounds when the pads are pressed, changing the octave by multiplying/dividing the oscillators' frequencies by 2, playing the count in sound before recording or playing.
 	
