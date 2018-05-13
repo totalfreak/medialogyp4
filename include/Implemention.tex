@@ -87,32 +87,35 @@ void writeSegments() {
 
 
 \section{The box}%Jens
+In order to conceal wires and micro controllers and to construct an easy way of controlling the various features a box was created. This section explains how the control box was built.
 
 	\subsection{CAD}
+	Autodesk's Fusion 360\footnote{Product overview page for Fusion 360: \url{https://www.autodesk.com/products/fusion-360/overview}} with an additional box generation plugin provided a convenient way of creating the blueprint for the control box that would later be used to laser cut the 6 sides of the box. Holes were cut onto the lid of the box to be able to place the needed buttons and LEDs. On the side facing the mat a square hole was cut that would be used for a custom made plug for easily connecting the mat with the Arduino Mega. For decoration a G-clef was also printed onto the front facing side (See \autoref{fig:finalbox1}). On the backside holes were cut to provide easy access for adding an external speaker through a female jack plug and also to power the Bela using a USB cable.
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{figure/Design/finalbox1}
+		\caption{The final prototype box}	
+		\label{fig:finalbox1}
+	\end{figure}
+	
 		
 	\subsection{Assembly}
-	
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.7\linewidth]{figure/Design/finalbox1}
-			\label{fig:finalbox1}
-			\caption{The final prototype box}
-			
-		\end{figure}
+	Due to the way the sides of the box were constructed with finger joints that fit together the box was easy to assemble. With a kerf of ??\todo{What was our kerf?}mm the sides were able to stick to each other without using additional glue or nails. However, the plugs were glued to the inside of the box. This was also the case for the buttons and the LEDs on the lid. These also required wires that were soldered on with extra length which made it possible to lift the lid of the box without wires being detached from the micro controllers. Within the lid a frame was glued on to hold the lid in place since the lid was not made with joints (See \autoref{fig:finalbox2}).
 	
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.7\linewidth]{figure/Design/finalbox2}
-			\label{fig:finalbox2}
 			\caption{The final prototype box}
+			\label{fig:finalbox2}
 		\end{figure}
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.7\linewidth]{figure/Design/finalbox3}
-			\label{fig:finalbox3}
 			\caption{The final prototype box with the electronic components inside}
-			
+			\label{fig:finalbox3}
 		\end{figure}
 
 \section{The mat}%Daniel
