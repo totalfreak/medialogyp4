@@ -35,7 +35,7 @@ struct Segment {
 };
 			\end{minted}
 		\end{listing}
-To save the segments and their data to persist through restarts, we make use of the onboard EEPROM. The EEPROM on the Arduino Mega can hold 4k bytes of data while our segments only take up 611 bytes of that space.
+To save the segments and their data to persist through restarts, we make use of the onboard EEPROM. The EEPROM on the Arduino Mega can hold 4k bytes of data while our segments only take up 611 bytes of that space. Writing to the EEPROM on an Arduino is quite straightforward, we simply iterate over our \mintinline{cpp}{Segment} array, and put in into the EEPROM according to the size of our structure.
 		\begin{listing}[H]
 			\caption{Writing our segment data to the EEPROM}
 			\label{listing:writeSegment}
@@ -47,23 +47,13 @@ void writeSegments() {
 }
 			\end{minted}
 		\end{listing}
-		
-				\begin{listing}[H]
-					\caption{Writing our segment data to the EEPROM}
-					\label{listing:recording}
-					\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.1,fontsize=\footnotesize,linenos]{cpp}						
-if (controller.recording) {
-	pentaFields[iterator][i].read();
-	controller.read();
-	segments[segmentSelector].sequence[iterator].activatedFields[i] = Field(0,0,0);
-	if(pentaFields[iterator][i].hasKid) {
-		segments[segmentSelector].sequence[iterator].activatedFields[i] = pentaFields[iterator][i];
-		segments[segmentSelector].sequence[iterator].octave = controller.octaveIterator;
-		segments[segmentSelector].sequence[iterator].activatedFields[i].play();
-	}
-}
-					\end{minted}
-				\end{listing}
+		\autoref{fig:flowchartPlayRecord} explains what happens when either the record or play buttons is pressed.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=.5\linewidth]{figure/Implementation/flowchartPlayRecord}
+			\caption{Flowchart of pressing either the play or record button}
+			\label{fig:flowchartPlayRecord}
+			\end{figure}
 	
 		\subsubsection{Libraries}%Daniel
 			FastLed, button.
