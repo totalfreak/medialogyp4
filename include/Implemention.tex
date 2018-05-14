@@ -62,7 +62,7 @@ void writeSegments() {
 	
 		\subsubsection{Libraries}%Daniel
 			To achieve some of the functionality in a short amount of time, two libraries were used in addition to our own system,
-			the FastLed and Button library.
+			the FastLed and Button library. The button library is fairly self explanatory, it is library with a button class, that makes it easy to read button presses and account for debounce. The FastLed library makes it easy to interface with and control a LED strip or LED matrix.
 	\subsection{PureData}%Jens
 		\autoref{fig:pdPatch} shows the main patch of the PD code that was uploaded to the Bela. It takes inputs through the Belas' pins from the Arduino Mega. The PD patch is responsible for playing the sounds when the pads are pressed, changing the octave by multiplying/dividing the oscillators' frequencies by 2, playing the count in sound before recording or playing.
 	
