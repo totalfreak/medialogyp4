@@ -1,40 +1,27 @@
 \chapter{Future Works}
-This section describes future work that could be conducted within the problem area. Some suggestions are related to our implementation, some are related to the research conducted using the prototype.
-\section{Prototype related future works}
+\section{supplementing - Testing for reactions towards the tool}
+The design requirements state that positive and negative emotions should and should not be induced – respectively. As so, a test was conducted, where the reaction to and experience of working with/ trying the tool, was In focus. For the test, the Microsoft desirability-toolkit – Namely the reaction words \cite{reactionWords}, was used as inspiration. The reaction words can be used to measure, users reactions towards the tool, by having them describe the tool with words from a given list, after using the tool.\\\\
+This test was conducted on Valby School in Copenhagen, on a class of 22 4.graders. The setup for this test was to firstly introduce the class to the tool in terms of usability – as the test should concern the experience over the level for which the tool is usable (see section for usability test)\todo{make reference to section }. Then the students were divided in 4 groups for which they were told to create a single sequence of a melody on the mat, which sequenced with the other groups creations, should become a single melody. Each group should then – in turns, create their sequence. The task served only as a way to have the students use the tool, and the solving of the task was therefore not to be used as data in this study. However, the task was within the scope of the learning goals (see section X )\todo{make reference to section } , and should therefore still fall within the context of use, meaning that the experience of usage should be close to similar( bias related to this will be discussed in the section X)\todo{make reference to section } to a real case usage.    
+\newline
+\\
+Lastly the students were told to highlight 5 reaction words on a provided piece of paper (see figure X) , to describe the tool. This is the data used to measure the reactions! There was a total of 28 randomly placed words, for which 17 was positive, and 11 negative. This screwed distribution, was done to even out the natural tendency of skepticism within humans (this is also used within the Microsoft desirability toolkit for the same reasons).  The reaction words card, can be found in the appendix X. \todo{make reference to }
+\newline
+\\
+The words were in Danish to avoid confusion and misunderstandings of words.  A list of the original words from the test, and a translation of these will be provided in the appendix X\todo{make reference to} . Within the report the translated(English) words will be used. 
+The frequency for which a word is selected will provide an understanding for the most commonly seen reactions towards the usage of the tool. However, it is worth mentioning that, as this is a small sample size (22 participants = one single class) the result might not be representative for the population (all 4. graders), and instead serves as an indication of the distributions of reactions related to the use of the tool. 
+\newline
+\\
+When the data is plotted into a histogram, it can be seen, that the distribution of most frequently selected words is skewed towards the positive reaction words. Furthermore it can be seen, that the most frequently used words are  \textit{“Creative”, “Fun”,} and \textit{“Entertaining”}, which in percentages is $\frac{20}{22}\cdot100 = 90.9\%$ and $\frac{18}{22}\cdot100 = 81.8\%$ and $\frac{14}{22}\cdot100 = 63.9\%$ respectively. The most selected negative reaction word is “Confusing” which in percentages is $\frac{5}{22}\cdot100 = 22.7\%$, Which is $\frac{20-5}{20}= 75\%$ less frequently selected than the most frequently used word – “Creative”.
 
-\subsection*{Client position in Virtual Reality}
-Knowing where the client is in the garden, while the architect is building it, is something most of the test participants commented on. In addition to this some kind of marker could be installed to track where the client was in the VR world and that would show op on the acrylic plate for the architect to know exactly where the client was at that moment. This could possibly be achieved using a projector that would show the position and rotation of the client.
 
-\subsection*{Making the prototype lighter and easier to handle}
-Another way to ease our prototype is to make it lighter. Basically this would be using another more transportable VR unit, that doesn't need as much setup time as it do right now. Furthermore a better webcam would be preferred.\\
-Regarding the box, it needs to be the right size for the camera used so that we don't have any parts on the acrylic plate where the marker wont show up in the VR world. The box itself would be made lighter and in a way that makes it easier to transport.
 
-\subsection*{Drawing sections}
-One problem with the current implementation is that it is impossible to do things like a flowerbed. During the usability test, one participant also remarked that the ability to a create custom shaped pond would be nice. The idea is reasonably simple; one can draw enclosed shapes on the plate. Placing a marker inside this will cause the entire shape to be filled with the marker's object. Rotating the flower would control the density of the objects in the shape. This could also be used to add things like tiled paths, or walls to the garden, making it look way more like a real garden. How the implementation could work can be seen in Figure \ref{fig:ftemarkers}, and \ref{fig:ftrmarkerslegend}. The old markers on the top are just due to the reuse of the old model.
+
 \begin{figure}[H]
 	\centering
-	\begin{minipage}[b]{0.49\textwidth}
-		\includegraphics[width=1.0\linewidth]{figure/Evaluation/futuremarkers.png}
-		\caption{Implementing this would allow architect to create flowerbeds, place multiple objects at a time, as well as change textures.}
-		\label{fig:ftemarkers}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[b]{0.49\textwidth}
-		\includegraphics[width=1.0\linewidth]{figure/Evaluation/futuremarkerslegend.png}
-		\caption{Explanation of what the Figure to the left would be interpreted as using this solution.}
-		\label{fig:ftrmarkerslegend}
-	\end{minipage}
+	\includegraphics[width=0.9\linewidth]{figure/Evaluation/histValby}
+	\label{fig:valbyTest}
+	\caption{Shows frequency of selected reaction words, from the test. The bin color (red or green) divides the words in negative(red) and positive(green) }
+	
 \end{figure}
 
-\subsection*{Adding the ability to export plant lists and measurements}
-When the landscape architect and customer have agreed upon a final design there should to be an export functionality that gathers all the data from the tokens on the board and export plant lists and measurements etc. for the customer who can pass it on to a gardener and/or a paver as blueprints for their work.
-
-\subsection*{Improving architect's ability to see orientation and relative size of objects}
-The tests indicated that a garden architect working with our prototype would have a difficult time telling where objects were oriented, and how far apart to place tokens so that the virtual objects would not overlap. Small objects also could not be placed as close as was desirable due to the size of the physical tokens. The problem could be solved by using 3D printed tokens that match the look of the virtual objects, and ensuring that the rotation of the virtual object matches that of the token. The printed objects would then be scaled correctly relatively to each other, meaning that telling size would be intuitive. This would require smaller fiducial markers to accomodate the smallest 3D printed objects.
-
-\section{Evaluation related future work}
-
-Better expert related research would be critical to establish the usefulness of the product inside the problem areas. Future researches should consider ways to get in contact with garden architects to ensure testers, as they proved an illusive target group.
-
-Testers in both tests requested elements that would increase the likeness between the VR garden, and how it would look in real life. Future research could be conducted into the relationship between how similar the experience of being in the VR garden match that of the real garden, as visual fidelity increases. Another potential area of research is how much of the garden experience is from nature sounds, the feeling of the weather, or warmth of the sun?
-
+This suggests, that the reaction towards the usage of the tool is mostly positive.  As so, it suggests that our design requirements have been fulfilled in terms of inducing Positive emotions – in terms of a positive reaction towards the tool. However, as some negative reaction words have been selected, the deign requirement of not inducing negative emotions, cannot be stated as fully fulfilled, however as stated the overall reaction distribution suggest that, predominantly positive emotions are induced with the usage of the tool, as so, the design requirements main intentions can be said to be fulfilled. 
