@@ -1,55 +1,70 @@
 \chapter{Design}
 
-In this chapter, the process of deciding upon and making the design of the Physical interface (music educational tool), will be explained. The design will be based on the formulated design requirements (see \autopageref{sec:DRequirements}), as well as common design principles (Gestalt), the SOTA (see \autopageref{sec:sota}) and knowledge gained from the workshop at Sankt Annæ (see \autopageref{sec:workshop}). 
+In this chapter, the process of deciding upon and making the design of the Physical interface (music educational tool), will be explained. The design will be based on the formulated design requirements (see \autoref{sec:DRequirements}), as well as common design principles (Gestalt \cite{gestalt}), the SOTA ( \autoref{sec:sota}) and knowledge gained from the workshop at Sankt Annæ (see \autoref{sec:workshop}). 
 
 
 \section{Intial design}
-The design of the physical interface was, with the design requirements, not specified to the extend that a specific concept for the design was obvious. The design could instead be taken in broad variety of directions, and still live up to the requirements. As so, the design of the physical interface has been though lots of different concepts and iterations. 
+The design of the physical interface was, with the design requirements, not specified to the extend, that a specific concept for the design was obvious. The design could instead be taken in broad variety of directions, and still live up to the requirements. As so, the design of the physical interface has been though lots of different concepts and iterations. 
 
 \subsection {Workshop prototypes - The pre-initial designs}
-In the stage of the analysis (before the Final problem statement was settled upon) where the problem concerning a lack of educational tools - build upon collaboration - was discovered, multiple initial designs was created as low fidelity prototypes. These were the ones presented at the workshop at Sankt Annæ (\autopageref{sec:workshop}). As stated (\autopageref{sec:ProblemArea}),was the protoypes in this stage, used to discuss and discover elements and concepts for which could be used in the final design. The finds from this workshop did not necessarily led to requirements, but instead served as pointers to which direction the design could be taken, when trying to achieve a tool the target group could desire. For example could the tool use movement, but it might conflict with or change focus from the learning aspect, and (in such case) should be avoided. In another case, the element (in this case movement) might serve to enhance the learning outcome (see \autopageref{AnalysisMovement}), and should therefore be strived for. This however depend on the individual concept, and each find from the workshop should therefore be discussed for each design idea. 
+In the stage of the analysis (before the Final problem statement was settled upon) where the problem concerning a lack of educational tools - build upon collaboration - was discovered, multiple initial designs were created as low fidelity prototypes. These were the ones presented at the workshop at Sankt Annæ (\autoref{sec:workshop}). As stated (\autoref{sec:ProblemArea}),was the protoypes in this stage, used to discuss and discover elements and concepts, which could be used in the final design. The finds from this workshop did not necessarily led to requirements, but instead served as pointers to which direction the design could be taken, when trying to achieve a tool the target group could desire. For example could the tool use movement, but it might conflict with or change focus from the learning aspect, and (in such case) should be avoided. In another case, the element (in this case movement) might serve to enhance the learning outcome (see \autoref{AnalysisMovement}), and should therefore be strived for. This however depend on the individual concept, and each find from the workshop should therefore be discussed in relation to each design idea. 
 \\\\
-In order to evaluate upon many different elements and ways of collaborating and learning music, the aim of the  concepts behind the prototypes, was differ significantly from one another. Both the topic of the material to be learned, and the way to work with this, was therefore different for each of the concepts. Each concept will be briefly described in the following, and can be found described in more detail in the appendix \todo{ref}. 
+In order to evaluate upon many different elements and ways of collaborating and learning music, the aim of the concepts behind the prototypes, was to differ significantly from one another. Both the topic of the material to be learned, and the way to work with this, was therefore different for each of the concepts. Each concept will be briefly described in the following figure \todo{make figure}, and can be found described in more detail in the appendix \todo{ref}. 
 \todo{lav "collage" med ideer og giv kort beskrivelse af concept ( ryste klods,joystic band,chord master felx ,frugt løkker,quizz game )}
 
 
 \subsection{From workshop and requirements - the Crawford slip method}
-To evaluate upon the workshop prototype concepts in relation to the design requirements formulated and the knowledge gained from the workshop, a custom version of the Crawford slip method was used (see \autopageref{designMethod}). By doing this, a list of suggestions to how elements could be used, and should not be used, was made, and used as inspiration for other concept ideas. A sample of the list can be seen in figure \todo{lav fig og ref til den }. The full list can be seen in the appendix \autopageref{CrawfordSlipList}.  
+To evaluate upon the workshop prototype concepts, in relation to the design requirements formulated and the knowledge gained from the workshop, a custom version of the Crawford slip method was used (\autoref{designMethod}). By doing this, a list of suggestions to how elements could be used, and should not be used, was made and used as inspiration for other concept ideas. A sample of the list can be seen in figure \todo{lav fig og ref til den }. The full list can be seen in the appendix \autoref{CrawfordSlipList}.  
+\\\\
+
+
+With the project group divided into two groups of three persons, two design concept was created (one for each group), with inspiration form this list. These two concepts, was then presented between the two groups, and discussed.  
+
+\subsubsection{Fredrik, Daniel, Alex idea}
+
+\subsubsection{Sequencer Mat}\label{sequencerMat}
+This design concept evolved around the idea of a mat, which should function as a sequencer (a tool to play and record sequences of sounds). The Mat should allow the user to actively create sounds in form of pure tones, by stepping on fields indicated as a grid on the mat. A sketch of the interface for this concept, can be seen in \autoref{firstSketchOfMat}. Each field on the vertical axis, should produce a single pure tone which should be different from one another. These tones should relate to a scale ( e.g: C,D,E,F,G,A,H). Each field along the horizontal axis, should produce the same pure tone. The sequencer functions -which could be: play, record, save, add new, reset, different channels, and adjust pace - should be controlled by buttons placed along the side of the mat, or near same.     
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{figure/Design/firstSketchOfMat} \label{fig:firstSketchOfMat}
+	\caption{Seen is the first sketch of the interface for the sequencer-Mat concept . In the middle of the figure, is a green 7x6 grid - each field should activate a sound when stepped on. The horizontal axis of this grid, indicates time. The vertical axis indicates pitch of the sound. The pitch is also indicated by a color scheme along the same axis, variating from a dark to a light color. This is illustrated in the first column of the grid. along same axis are the tone names stated besides their given rows. To the left of the grid are 9 push buttons (drawn as circles) with different functions (indicated with symbols and text) placed vertical. }
+\end{figure}
+
+To clarify how the basic sequencer functionality (play and record) should function, a use case has been made. \todo{make use case img}
+  
+
+As this concept included more of the desired elements gained from the workshop (\autoref{sec:workshop}) than the previous proposal,
+it was decided to continue working with this concept proposal (\autoref{sequencerMat}), as being the definitive design concept. \todo{find på bedre forklaring} 
+
+\section{The Final design}\label{designConcept}
+
+
+\section{Testing the design - Usability}
+
+\section{Improvements to the final design}
+
+
 
 -----------------\\\\
-
-
-
-
-
-
-
 Alex
 
 
 
 The group split up into two groups of 3 people. Using these pointers to make a final idea. 
-The two ideas from each group can be seen in appendix …..XXXX. 
+The ideas from each group can be seen in appendix …..XXXX. 
 The two ideas were then discussed and talked through to finalize the final design. 
 
-\section{Final design}
-Below is the design concept sketches of the final design. 
+
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figure/Design/sketchOne}
 	\label{fig:sketchOne}
 	\caption{Shows the early stage of the final design}
-	
+		\label{fig:finalbox1}
 \end{figure}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\linewidth]{figure/Design/sketchTwo}
-	\label{fig:sketchTwo}
-	\caption{Shows the the more completed final design}
-	
-\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -59,12 +74,6 @@ Below is the design concept sketches of the final design.
 	
 \end{figure}
 
-
-\section{The physical interface}
-
-\subsection{Making of the buttons}
-
-The process of the buttons used for the interaction with the mat.
 
 \begin{figure}[H]
 	\centering
@@ -93,9 +102,6 @@ The process of the buttons used for the interaction with the mat.
 	
 \end{figure}
 
-\section{The calculations}
-
-\section{The result}
 
 
 
