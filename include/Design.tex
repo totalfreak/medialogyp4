@@ -118,6 +118,68 @@ To test the usability of the mat and the control panel on the box a Usability te
 \end{figure}
 
 \subsection{Questionnaire}
+\begin{figure}[H]
+	\centering
+	
+	\begin{tikzpicture}
+	\begin{axis}
+	[
+	boxplot/draw direction=y,
+	height=10cm,
+	width=15cm,
+	enlargelimits=0.03,
+	ytick={1,1.5,2,2.5,3,3.5,4,4.5,5},
+	xtick={1,2,3,4,5,6,7,8,9,10},
+	xlabel=Questions,
+	ylabel={Level of agreement},
+	xticklabels={
+		1,2,3,4,5,6,7,8,9,10}
+	]
+	\addplot+[boxplot]
+	table[row sep=\\,y index=0] {
+		data\\ 1\\ 1\\ 1\\ 1\\ 2\\ 2\\ 2\\ 2\\ 2\\ 3\\
+	};
+	\addplot+[boxplot]
+	table[row sep=\\,y index=0] {
+		data\\ 1\\ 1\\ 1\\ 2\\ 2\\ 2\\ 3\\ 3\\ 4\\ 4\\ 
+	};   
+	\addplot+[boxplot]
+	table[row sep=\\,y index=0] {
+		data\\ 2\\ 2\\ 3\\ 4\\ 4\\ 4\\ 4\\ 5\\ 5\\ 5\\ 
+	};   
+	\addplot+[boxplot]
+	table[row sep=\\,y index=0] {
+		data\\ 1\\ 1\\ 1\\ 2\\ 3\\ 3\\ 3\\ 3\\ 3\\ 4\\
+	};  
+	\addplot+[boxplot]
+	table[row sep=\\,y index=0] {
+		data\\ 3\\ 3\\ 4\\ 4\\ 4\\ 4\\ 4\\ 4\\ 5\\ 5\\
+	};  
+	\addplot+[boxplot]
+	table[row sep=\\,y index=0] {
+		data\\ 1\\ 1\\ 2\\ 2\\ 2\\ 2\\ 2\\ 2\\ 4\\ 4\\
+	};  
+	\addplot+[boxplot]
+	table[row sep=\\,y index=0] {
+		data\\ 2\\ 3\\ 4\\ 4\\ 5\\ 5\\ 5\\ 5\\ 5\\ 5\\
+	};  
+	\addplot+[boxplot]
+	table[row sep=\\,y index=0] {
+		data\\ 1\\ 2\\ 2\\ 2\\ 2\\ 2\\ 3\\ 4\\ 4\\ 5\\
+	};
+	\addplot+[boxplot]
+	table[row sep=\\,y index=0] {
+		data\\ 1\\ 2\\ 2\\ 3\\ 4\\ 4\\ 4\\ 4\\ 4\\ 5\\
+	};          
+	\addplot+[boxplot]
+	table[row sep=\\,y index=0] {
+		data\\ 1\\ 1\\ 1\\ 1\\ 1\\ 2\\ 2\\ 3\\ 4\\ 5\\
+	};  
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Box plot graph showing the result of each SUS question.}
+	\label{fig:boxPlotResults}
+\end{figure}
 
 \subsection{Findings}
 
