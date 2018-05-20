@@ -117,6 +117,15 @@ In order to conceal wires and micro controllers and to construct an easy way of 
 			\caption{Figure showing the inside of the final control box.}
 			\label{fig:finalbox2}
 		\end{figure}
+	
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{figure/Design/buttons}
+			\label{fig:buttons}
+			\caption{On the left is the button without the customized button and on the right is the customized version of the final play button.}
+			
+		\end{figure}
 		
 \section{The mat}\label{sec:theMat}%Daniel
 	Before any construction could take place, a concrete idea and materials should be chosen. This started out with research and development(R\&D) into pressure sensors, but was quickly diverged from as most couldn't hold much weight. From here the direction changed to DIY projects that included pressure plates, such as this tutorial to make pressure plates for a haunted house\footnote{\url{http://www.instructables.com/id/Use-a-DIY-Pressure-Plate-Switch-to-Automate-Your-H/}}, which provided the base idea for the fields's construction. The field at this point wouldn't be sturdy enough to withstand many children jumping around on it for an extended period of time. To make the fields more sturdy and able to persist through many uses, a thin foam layer with holes was inserted in between the top and bottom layer of foil. With that, the final field structure was finished and the result can be seen in \autoref{fig:finalField}.\todo{Write about wires.}\\
@@ -131,12 +140,19 @@ In order to conceal wires and micro controllers and to construct an easy way of 
 	Now that the structure of the fields was settled, twenty identical pieces had to be made, and put together in their 4x5 layout. In between each column of fields foam tubes were laid down, to funnel the wires through, and to separate the columns. To make the entire mat not fall apart, everything was duct taped together, so the mat stayed as one big piece. The finished mat can be seen in \autoref{fig:finalMat}.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.6\linewidth]{figure/Implementation/fullMat}
+		\includegraphics[width=0.42\linewidth]{figure/Implementation/fullMat}
 		\caption{IMAGE OF ENTIRE MAT[PH]}
 		\label{fig:finalMat}
 	\end{figure}
 	\todo{Update caption}
- 	To provide some usability to the mat, an LED strip was added spanning across the top part of the beats, so as to signify what beat was currently active.
+ 	As explained in USABILITY DESIGN SECTION, there was a need for a LED strip to highlight the active beat on the mat. The LED strip that was obtainable and compatible with the FastLed library was the APA102/SK9822 LED strip akin to this one\footnote{APA102/SK9822 LED strip: \url{http://www.ipixelleds.com/index.php?id=125}}. The strip was duct taped along the top of the mat as seen in \autoref{fig:stripMat}.
+ 	
+ 	\begin{figure}[H]
+ 		\centering
+ 		\includegraphics[width=0.8\linewidth]{figure/Implementation/stripMat}
+ 		\caption{IMAGE OF LED STRIP[PH]}
+ 		\label{fig:stripMat}
+ 	\end{figure}
 	
 \section{Circuit}
 In order to describe the electronics of system in more detail a schematic was made (See \autoref{fig:schematic}).
