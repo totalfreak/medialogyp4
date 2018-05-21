@@ -111,29 +111,28 @@ In order to conceal wires and micro controllers and to construct an easy way of 
 	\subsection{Assembly}
 	Due to the way the sides of the box were constructed with finger joints that fit together the box was easy to assemble. With a kerf of 0,275mm the sides were able to stick to each other without using additional glue or nails. However, the custom mat plug was glued to the inside of the box. This was also the case for the buttons and the LEDs on the lid. These also required wires that were soldered on with extra length which made it possible to lift the lid of the box without wires being detached from the micro controllers. Within the lid a frame was glued on to hold the lid in place since the lid was not made with joints (See \autoref{fig:finalbox2}).
 	
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.9\linewidth]{figure/Implementation/boxInside}
-			\caption{Figure showing the inside of the final control box.}
-			\label{fig:finalbox2}
-		\end{figure}
-	
-	
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.7\linewidth]{figure/Design/buttons}
-			\label{fig:buttons}
-			\caption{On the left is the button without the customized button and on the right is the customized version of the final play button.}
-			
-		\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure/Implementation/boxInside}
+		\caption{Figure showing the inside of the final control box.}
+		\label{fig:finalbox2}
+	\end{figure}
+
+	For the creation of the buttons, standard electronic momentary push button switches were used. These buttons had a top on which we could use a 3D printing pen to fashion a bigger surface that could be painted on to achieve the wanted design. After printing the button shell, a paste was applied to even out imperfections in the surface. To make the surface ready for painting, it was sanded, and finally the paint was applied according to the design, as seen in \autoref{fig:buttons}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{figure/Design/buttons}
+		\label{fig:buttons}
+		\caption{The button used, without and with the painted shell. All of the other interface buttons were made in a similar fashion.}
+	\end{figure}
 		
 \section{The mat}\label{sec:theMat}%Daniel
-	Before any construction could take place, a concrete idea and materials should be chosen. This started out with research and development(R\&D) into pressure sensors, but was quickly diverged from as most couldn't hold much weight. From here the direction changed to DIY projects that included pressure plates, such as this tutorial to make pressure plates for a haunted house\footnote{\url{http://www.instructables.com/id/Use-a-DIY-Pressure-Plate-Switch-to-Automate-Your-H/}}, which provided the base idea for the fields's construction. The field at this point wouldn't be sturdy enough to withstand many children jumping around on it for an extended period of time. To make the fields more sturdy and able to persist through many uses, a thin foam layer with holes was inserted in between the top and bottom layer of foil. With that, the final field structure was finished and the result can be seen in \autoref{fig:finalField}.\todo{Write about wires.}\\
+	Before any construction could take place, a concrete idea and materials should be chosen. This started out with research and development(R\&D) into pressure sensors, but was quickly diverged from as most couldn't hold much weight. From here the direction changed to DIY projects that included pressure plates, such as this tutorial to make pressure plates for a haunted house\footnote{\url{http://www.instructables.com/id/Use-a-DIY-Pressure-Plate-Switch-to-Automate-Your-H/}}, which provided the base idea for the fields's construction. The field at this point wouldn't be sturdy enough to withstand many children jumping around on it for an extended period of time. To make the fields more sturdy and able to persist through many uses, a thin foam layer with holes was inserted in between the top and bottom layer of foil. With that, the final field structure was finished and the result can be seen in \autoref{fig:finalField}.\\
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\linewidth]{figure/Implementation/Medialogyp4mat}
-		\caption{The final structure of the mat's fields, with foil on the inside of the top and bottom, and a thin foam layer in the middle, to reinflate the field after it's been activated.}
+		\caption{The final structure of the mat's fields, with foil on the inside of the top and bottom, and a thin foam layer in the middle, to reinflate the field after it's been activated. The bottom wire is ground, while the top wire is attached to the Arduino Mega.}
 		\label{fig:finalField}
 	\end{figure}
 
