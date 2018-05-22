@@ -1,0 +1,63 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+bar shift auto,
+xmin=-0.2,
+xmax=9.2,
+xtick={1, 2, 3, 4, 5, 6, 7, 8},
+xlabel style={font=\color{white!15!black}},
+xlabel={Questions from 1 to 8},
+ymin=0,
+ymax=5,
+ylabel style={font=\color{white!15!black}},
+ylabel={Mean of each question},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Standard Deviation},
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot[ybar, bar width=0.8, fill=mycolor1, draw=black, area legend] table[row sep=crcr] {%
+1	4.04\\
+2	4.08\\
+3	1.84\\
+4	3.48\\
+5	3.68\\
+6	3.68\\
+7	3.04\\
+8	2.08\\
+};
+\addplot[forget plot, color=white!15!black] table[row sep=crcr] {%
+-0.2	0\\
+9.2	0\\
+};
+\addlegendentry{Mean}
+
+\addplot [color=mycolor2, draw=none]
+ plot [error bars/.cd, y dir = both, y explicit]
+ table[row sep=crcr, y error plus index=2, y error minus index=3]{%
+1	4.04	0.934523051258413	0.934523051258413\\
+2	4.08	0.702376916856849	0.702376916856849\\
+3	1.84	1.1060440015358	1.1060440015358\\
+4	3.48	1.00498756211209	1.00498756211209\\
+5	3.68	0.945163125250522	0.945163125250522\\
+6	3.68	1.0295630140987	1.0295630140987\\
+7	3.04	1.30639452948436	1.30639452948436\\
+8	2.08	1.15181016954473	1.15181016954473\\
+};
+\addlegendentry{Std}
+
+\end{axis}
+\end{tikzpicture}%
