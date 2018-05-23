@@ -174,7 +174,7 @@ As the buttons was created in the following implementation phase \autoref{imp}, 
 \end{figure}
 
 
-By visualizing the tool with all of the design decisions made in this chapter, the final design should resemble \autoref{fig:designFinal}. The implementation of the mat will be described in the following chapter \autoref{imp}.  
+By visualizing the tool with all of the design decisions made in this chapter, the final design should resemble \autoref{fig:designFinal}. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figure/Design/DesignFinal}
@@ -182,16 +182,7 @@ By visualizing the tool with all of the design decisions made in this chapter, t
 	\caption{A visualization of the final design.}	
 \end{figure}
 
-
-
-
-
-
-
-
-
-
-
+The implementation of the mat will be described in the following chapter \autoref{imp}, however before ending the design chapter, a usability test (which relates to the design of the tool) on the final and implemented tool, will be discussed here. 
 
 
 \section{Testing the design - Usability}
@@ -284,5 +275,13 @@ To calculate the score 1 point must be subtracted by each odd-numbered item and 
 As seen in \autoref{fig:susScore} the mat has some problems that should be fixed. The technical mat related issues are immediately apparent. Based on the observations and comments the two major problems were the missing button labels and beat indicators.
 
 \section{Improvements to the final design}
- %  LED og klistermærker 
-\todo{kan først skrives når usability er færdig da der skal refereres meget dertil :) }
+The finds from the test was used to, not only trying to improve upon the design, but mainly to understand which parts of the design should be explained to more detail when conducting the upcoming final test, to limit the test in being influenced by usability problems. The problem areas of the tool ( missing labels/indication on control buttons, and beat indication) was tried improved by inserting label stickers onto the box in proximity to the related buttons (this can be seen on \autoref{fig:finalbox1} in \autoref{imp}), and by implementing a LEDstrip which should lid op the egde of the mat, indicating each column of the mat, and lid the column for which the beat was, as can be seen on \autoref{fig:LEDstrip}.  
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{figure/Design/LEDstrip}
+	\caption{A visualization of the LEDstrip added to the design. Red colored LEDs separates the columns and yellow LEDs highlights the column for which the beat has reached when a sequence is played or being recorded}
+	\label{fig:LEDstrip}
+\end{figure}
+
+The usability was not tested again after applying the changes, due to time limitations, and as so, both the problem areas concerning usability found from the test, and the functionalities of the changes made, should be explained in detail, in order to limit the risks of usability related interference in the final test ( which will be conducted in \autoref{evaluation})
