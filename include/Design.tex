@@ -106,7 +106,7 @@ With the pentatonic scale chosen for the tool, the vertical size of the mat was 
 	\caption{Seen is a computer generated visualization of the size of the mat (a 5x4 grid), and the placement of the control box in relation to this.}
 \end{figure}
 
-To visualize the tonal context - ranging from a dark to a light tone, from bottom to top of the column - it was decided to use color to represent this transition. A color scheme was therefore to be chosen. Four out of five of the discussed color schemes can be seen on \autoref{colors} - missing is a gray scale gradient. The different color schemes discussed, was created with the intention of making a transition from a light to a dark color, resembling the tonal context. During the discussion, it became clear that the brightness of colors, was perceived different between individuals. For example could the green color be perceived brighter than the yellow by one person, while the opposite applied to another. To avoid confusion and ensure a common understanding for the transition, it was decided to use five different nuances/brightnesses of the same color. Two examples of this can be seen on \autoref{fig:colors}  - the two bottom ones. The orange color scheme was chosen, as this - in comparison to the blue, is often refereed to as a energetic color \cite{orange}, and was in relation to the physical active context of the tool, a more suitable choice.
+To visualize the tonal context - ranging from a dark to a light tone, from bottom to top of the column - it was decided to use color to represent this transition. A color scheme was therefore to be chosen. Four out of five of the discussed color schemes can be seen on \autoref{colors} - missing is a gray scale gradient. The different color schemes discussed, was created with the intention of making a transition from a light to a dark color, resembling the tonal context. During the discussion, it became clear that the brightness of colors, was perceived different between individuals. For example could the green color be perceived brighter than the yellow by one person, while the opposite applied to another. To avoid confusion and ensure a common understanding for the transition, it was decided to use five different nuances/brightnesses of the same color. Two examples of this can be seen on \autoref{fig:colors}  - the two bottom ones. The orange color scheme was chosen, as this - in comparison to the blue, is often refereed to as a energetic color \cite{orange}, and was in relation to the physical active context of the tool, more suitable in the minds of the project group.               
 
 \begin{figure}[H]
 	\centering
@@ -130,10 +130,11 @@ As so, by adding these decisions for colors and design principle, it should be v
 The control box functions, is as stated, both as protection for the hardware, as well as a interface for the controls of the sequencer. In this section, the thoughts concerning the dimensions of the box will be stated, and the functionalities for the sequencer and the visualizing of relating buttons, will be discussed.
 
 \subsubsection{The dimensions} 
-First of all, should the box be big enough to store the wires and components of the system. Besides this, the dimensions should take the use and possible misuse into consideration. With this is meant, that actions such as using the controls on the box, should not make it fall over (it should be steady), and that jumping on the box (misuse) might be avoided by having a considerably large height of the box. The last mentioned, would also effect the extend to which the student will have to bend down to use the controls, maybe making it both more pleasant to use, and less tempting to try to use the controls with ones feet (misuse). The box should however remain a relatively small size, as it should be easily transportable. \\ 
-All of this taking into consideration, the dimensions of the box was decided to be, around the size of a A4 paper for the interface side, and a height larger than the mats (at least), but still small enough to give the box a low center of gravity to prevent it from falling over.
+First of all, should the box be big enough to store the wires and components of the system. Besides this, the dimensions should take the use and possible misuse into consideration. With this is meant that actions such as using the controls on the box, should not make it fall over - it should be steady, and that jumping on the box (misuse) might be avoided by having a considerably large height of the box. The last mentioned, would also effect the extend to which the student will have to bend down to use the controls, maybe making it both more pleasant to use, and less tempting to try to use the controls with ones feet (misuse). The box should however remain a relatively small size, as it should be easily transportable. \\ 
+All of this taking into consideration, the dimensions of the box was decided to be, around the size of a A4 paper for the interface side, and a height larger than the mats, but still small enough to give the box a low center of gravity to prevent it from falling over.
 
 \subsubsection{The controls - function and visuals} 
+<<<<<<< HEAD
 The sequencer functions such as play, record etc., should be settled upon in order to establish the overall functionality of the tool, the numbers of controls(buttons) and their design. \\  The discussed functionalities, are:  
 
 \begin{itemize}
@@ -151,6 +152,9 @@ The sequencer functions such as play, record etc., should be settled upon in ord
 
 As the tools main purpose for this project, is to facilitate collaboration, it was decided to minimize the number of functionalities to keep the complexion of the tool to a minimum. The functionalities chosen was therefore limited to \textit{play}, \textit{record}, \textit{four sequences}, and \textit{octave up/down}. \textit{Play} and \textit{record}, is the most basic functionalities of, and defines a sequencer. The sequences, was chosen in order to let the uses make creations longer than four tones (which would be the case if there were only one sequence). The choice of having four sequences  
 %  design of buttons,symbols, gradient +, section buttons and nubmers +, number of sequences, placement of buttons, similarity, proximity, 
+=======
+%  design of buttons,symbols, gradient +, section buttons and nubmers +, number of sequences, placement of buttons, similarity, poximity, 
+>>>>>>> 0bb95bfea436aa26cf2efd5fac1e42906cd9bb7e
 
 \begin{figure}[H]
 	\centering
@@ -234,11 +238,18 @@ In \autoref{fig:susResults} the results from the SUS-questionnaire, that followe
 	\label{fig:susResults}
 \end{figure}
 
+Due to the way the SUS-scale is constructed it is expected that the boxplots will alternate between high to low every other question in \autoref{fig:susResults} if the usability is sufficient. In this case we see that the first question is low even though it should be high. This particular question was \textit{I think that I would like to use this system frequently} and since the test participants were made aware of the actual target group as being elementary school children learning music the outcome of the first question is not surprising. Question 8, which was reworded to \textit{I found the system very awkward to use}, did not seem to cause any noticeable confusion as the participants filled out their questionnaire. However, results shows that there were mixed feelings towards the mat usage. This might be due to the fact that some of the pads on the mat started to behave more and more inconsistent throughout the day of the test.
+
 \subsection{Findings}
+To find out how the system scores on the SUS scale some calculation must be made. The scoring system of the SUS ranges from 0-100 with 2.5 increments. The calculation is shown below in \autoref{eq:susCalc}:
 
-$$( (Q_1+Q_3+Q_5+Q_7+Q_9)-5+25-(Q_2+Q_4+Q_6+Q_8+Q_{10}) )*2.5$$
+\begin{equation} \label{eq:susCalc}
+( (Q_1+Q_3+Q_5+Q_7+Q_9)-5+25-(Q_2+Q_4+Q_6+Q_8+Q_{10}) )*2.5
+\end{equation}
+\linebreak
+To calculate the score 1 point must be subtracted by each odd-numbered item and the even-numbered questions must be subtracted from 5. This is then multiplied by 2.5 to get the final score. \autoref{tab:susScoreTableAppendix} shows the calculated scores for each participant and the overall mean of the SUS scores for all tests.
 
-\begin{table}[]
+\begin{table}[H]
 	\centering
 	\caption{Table showing the SUS score for each individual test participants and the overall mean score. For full table see appendix \ref{appendix:susResults}}
 	\label{tab:susScoreTableAppendix}
@@ -259,6 +270,8 @@ $$( (Q_1+Q_3+Q_5+Q_7+Q_9)-5+25-(Q_2+Q_4+Q_6+Q_8+Q_{10}) )*2.5$$
 	\end{tabular}
 \end{table}
 
+\autoref{fig:susScore} shows how the overall test score for the Usability test performs on the full scale from 0-100. As seen in the figure the total score is somewhere in between \textit{OK} and \textit{GOOD}, which means that there is some room for improvement.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{figure/Design/susScore}
@@ -266,7 +279,7 @@ $$( (Q_1+Q_3+Q_5+Q_7+Q_9)-5+25-(Q_2+Q_4+Q_6+Q_8+Q_{10}) )*2.5$$
 	\label{fig:susScore}
 \end{figure}
 
-\todo{add conclusion/summary}
+\subsection{Summary}
 
 
 \section{Improvements to the final design}
