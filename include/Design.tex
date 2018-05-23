@@ -149,13 +149,13 @@ The sequencer functions such as play, record etc., should be settled upon in ord
 	\item reset
 \end{itemize}   
 
-As the tools main purpose for this project, is to facilitate collaboration, it was decided to minimize the number of functionalities to keep the complexion of the tool to a minimum. The functionalities chosen was therefore limited to \textit{play}, \textit{record}, \textit{four sequences}, and \textit{octave up/down}. \textit{Play} and \textit{record}, is the most basic functionalities of, and defines a sequencer. \\
-The sequences, was chosen in order to let the uses make creations longer than four tones (which would be the case if there were only one sequence). The choice of having four sequences relates to the fact that music often builds upon even numbers, for which four is both one of the more common ones \cite{tempo}, and creates room enough for small melodies to be created. \\
+As the tools main purpose for this project, is to facilitate collaboration, it was decided to minimize the number of functionalities to keep the complexion of the tool to a minimum. The functionalities chosen was therefore limited to \textit{play}, \textit{record}, \textit{delete} \textit{four sequences}, and \textit{octave up/down}. \textit{Play}, \textit{delete} and \textit{record}, are the most basic functionalities of, and defines a sequencer. \\
+The sequences functionality, was chosen in order to let the uses make creations longer than four tones (which would be the case if there were only one sequence). The choice of having four sequences relates to the fact that music often builds upon even numbers, for which four is both one of the more common ones \cite{tempo}, and creates room enough for small melodies to be created. \\
 The octave up/down was decided to be implemented even though it could be seen as an additional feature. This is due to the limited number of tones available when "only" having five different fields. By being able to change the octave of the tones, more tones will be available, and therefore enable the possibility to create and replicate melodies which spans over multiple octaves (example of a such song: \textit{"frere jacques"}).
 \\\\
-As it is know known which functions to implement, the control buttons for these can be designed. 
-%  design of buttons,symbols, gradient +, section buttons and nubmers +, number of sequences, placement of buttons, similarity, proximity, 
-
+As it is know known which functions to implement, the control buttons for these can be designed.\\
+The tree most bacis functionalities (play,delete,record) was solely based on the commonly used symbols for same functions (Used in for example \textit{Garage band} \cite{Garageband}). \\The sequences buttons was chosen to be visualized as numbers, as this might signify that the sequence of 1 should be recorded and played before sequence 2, and so forward. To indicate active sequences, an led for each should be lid if the related sequence is active. \\ The octave buttons was designed as arrows pointing in the up and down direction, to indicate the shift towards same. The button designs can be seen in a render of same, in \autoref{fig:buttonDesign}. \\ the placement of the buttons in relation to each other was settled upon using the gestalt principles \cite{gestalt} as guidance. The three main functionalities should be the same size of buttons (similarity\cite{gestalt}), and should be placed close together (proximity\cite{gestalt}).The sequence buttons should be smaller and placed together following the same principles. The LEDs related to the buttons, should also follow the principle of proximity, by being placed close to the buttons, as well as the relating pairs (button and LED) should be placed directly above/under each other - indicating that the given LED relates to the below sequence. \\ The octave buttons follow same principles as the the other groups of buttons - size similarity, and proximity.    
+ 
 
 \begin{figure}[H]
 	\centering
@@ -174,7 +174,7 @@ As it is know known which functions to implement, the control buttons for these 
 
 
 
-Visualizing the tool with all of the design decisions made in this chapter, the final design should resemble \autoref{fig:designFinal}.  
+By visualizing the tool with all of the design decisions made in this chapter, the final design should resemble \autoref{fig:designFinal}. The implementation of the mat will be described in the following chapter \autoref{imp}.  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figure/Design/DesignFinal}
